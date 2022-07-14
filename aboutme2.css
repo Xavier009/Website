@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald, Arial;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+   /*background-color: rgb(167, 172, 170);
+    /*background-color: rgb(0, 77, 41);*/
+    /*background: radial-gradient(black, grey);*/
+
+background-color: #2f4353;
+background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+
+
+
+background-color: #d3d3d3;
+background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 74%);
+
+}
+
+a{
+    position: relative;
+    width: 500px;
+    height: 110px;
+    margin-top: 10px;
+    background-color: #f1f2f6;
+    background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.25s
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(107, 107, 107);
+
+        transition: 0.30s ease-in-out;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(107, 107, 107);
+    transition: 0.30s ease-in-out;
+}
+
+a:nth-child(2)::before,
+a:nth-child(2)::after
+{
+    background: rgb(107, 107, 107);
+    
+}
+
+a:nth-child(3)::before,
+a:nth-child(3)::after{
+    background: rgb(107, 107, 107);
+}
+
+a:nth-child(4)::before,
+a:nth-child(4)::after{
+    background: rgb(107, 107, 107);
+}
+
+
+a:hover::before,
+a:hover::after
+{
+    width: 50%;
+}
+
+a span{
+    position: absolute;
+    z-index: 1;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+a span:nth-child(1)
+{
+    transition-delay: 0.10s;
+}
+
+a:hover span:nth-child(1)
+{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+a span:nth-child(2)
+{
+    transform: scale(3);
+    opacity: 0;
+}
+
+a:hover span:nth-child(2)
+{
+    transform: scale(1);
+    transition-delay: 0;
+    text-align: center;
+    opacity: 1;
+    z-index: 10;
+    color: rgb(255, 255, 255)
+}
