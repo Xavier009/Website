@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Oswald, Arial;
+    color: white;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 7px;
+    margin: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 8px;
+    background-color: #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 74%);
+}
+
+.calvin-ellis-image-container{
+    grid-column: 1/3;
+    background-color: grey;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.calvin-ellis-image{
+    width: 100%
+}
+
+.calvin-ellis-description{
+    background-color: grey;
+    
+}
+
+.tutoring-description-container{
+    grid-column: 1/3;
+    grid-row: 2;
+    background-color: grey;
+    border-radius: 5px;
+    
+}
+
+.tutor-text-container{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 1px;
+    border: solid;
+    border-color: white;
+}
+
+
+.tutoring-image-container{
+    overflow: hidden;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.tutoring-image{
+    width: 100%
+}
+
+@media screen and (max-width:700px)
+{
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+}
+
+
+
+.return-home-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return-home{
+    font-size: 18px;
+    color: black;
+}
